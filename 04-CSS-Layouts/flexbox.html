@@ -14,7 +14,7 @@
       }
       .el--3 {
         background-color: green;
-        height: 150px;
+        height: 250px;
       }
       .el--4 {
         background-color: goldenrod;
@@ -42,7 +42,29 @@
         /* FLEXBOX */
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
+        gap: 32px;
+      }
+
+      .el--1 {
+        align-self: flex-start;
+        flex-grow: 2;
+      }
+
+      .el--4 {
+        align-self: stretch;
+        order: 1;
+      }
+
+      .el--6 {
+        order: -1;
+      }
+
+      .el {
+        /* flex-basis: 200px; */
+        /* flex-shrink: 0;
+        flex-grow: 1; */
+        flex: 0 1 200px;
       }
     </style>
   </head>
